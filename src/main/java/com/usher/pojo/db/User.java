@@ -15,7 +15,7 @@ import com.usher.utilities.CustomDateTimeDeserializer;
 import com.usher.utilities.CustomDateTimeSerializer;
 
 @Entity
-@Table(name = "user")
+@Table(name = "user", schema = "usher")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class User {
 
