@@ -1,4 +1,4 @@
-package com.usher.pojo;
+package com.usher.pojo.db;
 
 import java.util.List;
 
