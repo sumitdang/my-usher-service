@@ -32,6 +32,9 @@ public class User {
 	@Column(name = "pin")
 	private String pin;
 
+	@Column(name = "phone")
+	private String phone;
+	
 	@Column(name = "created_by")
 	@JsonIgnore
 	private String createdBy;
@@ -84,6 +87,14 @@ public class User {
 		this.pin = pin;
 	}
 
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
 	public String getCreatedBy() {
 		return createdBy;
 	}
@@ -119,9 +130,10 @@ public class User {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
+		sb.append("email : ").append(this.email).append("\n");
 		sb.append("firstName : ").append(this.firstName).append("\n");
 		sb.append("lastName : ").append(this.lastName).append("\n");
-		sb.append("email : ").append(this.email).append("\n");
+		sb.append("phone : ").append(this.phone).append("\n");
 		return sb.toString();
 	}
 
