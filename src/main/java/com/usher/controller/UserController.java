@@ -43,7 +43,7 @@ public class UserController {
 	 * @return List<User>
 	 * @throws Exception
 	 */
-	@GetMapping("/users")
+	@GetMapping("/users/")
 	public ResponseEntity<List<User>> getUsers() {
 		log.info("GET /users API to fetch all users");
 		List<User> users = userRepo.getAllUsers();
@@ -75,7 +75,7 @@ public class UserController {
 	 * 
 	 * @return ResponseEntity<User>
 	 */
-	@PostMapping("/users")
+	@PostMapping("/users/")
 	public ResponseEntity<User> addNewuser(@RequestBody User user) {
 		log.info("POST /users/");
 
